@@ -21,14 +21,19 @@ const callback = (mutationsList, observer) => {
         if (mutation.type !== 'childList') return
         mutation.addedNodes.forEach(node => {
             if (node.nodeType !== 1) return;
-            const matchingDescendants = node.querySelectorAll('[data-release-focus-from="CLICK"] span > span > span');
-            matchingDescendants.forEach(namesHandler)
+            const selectors = [
+                '[data-release-focus-from="CLICK"] span > span > span', // mensaje
+                'h6 > div[role="none"] > div[role="presentation"] > div > span' // respuesta
+            ];
+            selectors.forEach(selector => {
+                node.querySelectorAll(selector).forEach(namesHandler);
+            });
         });
     });
 };
 
 const namesHandler = (elem) => {
-    const name = elem.textContent;
+    const name = elem.textContent.split(' ')[0];
     elem.style.fontWeight = 'bold';
     elem.style.color = `hsl(${stringToAngle(name)}, 100%, 75%)`
 }

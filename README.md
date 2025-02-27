@@ -13,6 +13,3 @@ Hice esta extensión porque me molestaba hablar en un chat de grupo y tener que 
 - Cuando detecta un nombre, lo convierte en un hash
 - A partir de ese hash lo convierte a un ángulo para convertirlo a un color
 - Al depender los colores del nombre hace que se mantenga consistente entre distintos chats
-
-## TODO:
-- Hacer que las respuestas tengan colores
