@@ -11,6 +11,8 @@ function stringToAngle(str) {
     return angle;
 }
 
+const brightness = localStorage.getItem('igt') === 'dark' ? 75 : 25 || 25;
+
 // chat window document.querySelector('div [data-pagelet="IGDOpenMessageList"]');
 const targetNode = document.body;
 
@@ -35,7 +37,7 @@ const callback = (mutationsList, observer) => {
 const namesHandler = (elem) => {
     const name = elem.textContent.split(' ')[0];
     elem.style.fontWeight = 'bold';
-    elem.style.color = `hsl(${stringToAngle(name)}, 100%, 75%)`
+    elem.style.color = `hsl(${stringToAngle(name)}, 100%, ${brightness}%)`
 }
 
 const observer = new MutationObserver(callback);

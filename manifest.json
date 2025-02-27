@@ -8,7 +8,7 @@
     ],
     "content_scripts": [
         {
-            "matches": ["https://instagram.com/direct/*"],
+            "matches": ["https://instagram.com/direct/*", "https://www.instagram.com/direct/*"],
             "js": ["content.js"]
         }
     ]
