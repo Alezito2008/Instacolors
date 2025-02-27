@@ -1,0 +1,15 @@
+{
+    "name": "Instacolors",
+    "version": "1.0",
+    "author": "Alezito",
+    "manifest_version": 3,
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://instagram.com/direct/*", "https://www.instagram.com/direct/*"],
+            "js": ["content.js"]
+        }
+    ]
+}
