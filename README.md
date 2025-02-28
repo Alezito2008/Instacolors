@@ -1,8 +1,9 @@
 # Instacolors
 
 Hice esta extensión porque me molestaba hablar en un chat de grupo y tener que estar leyendo quién lo mandó así que le agregué colores a los nombres para que sea más fácil distinguir quién habla
-
-![Demostración](https://i.imgur.com/YkL4W4j.png)
+Antes | Después
+:-: | :-:
+![Antes](https://i.imgur.com/dHQDtd5.png) | ![Despues](https://i.imgur.com/YkL4W4j.png)
 
 ## Instalación
 1. Descargar el repositorio
